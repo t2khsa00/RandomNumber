@@ -1,0 +1,57 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Button Style */
+button#myBtn {
+    padding: 15px 20px;
+    font-size: 2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button#myBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button#myBtn:active {
+    background-color: #003f7f;
+    transform: translateY(2px);
+}
+
+/* Label Styles */
+label#myLabel1, label#myLabel2, label#myLabel3 {
+    display: block;
+    margin-top: 20px;
+    font-size: 6em;
+    font-weight: bold;
+    color: #b91010;
+    text-align: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+label#myLabel1.show-result, 
+label#myLabel2.show-result, 
+label#myLabel3.show-result {
+    color: #007bff;
+    transform: scale(1.2);
+}
